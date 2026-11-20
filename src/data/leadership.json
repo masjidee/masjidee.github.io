@@ -1,0 +1,553 @@
+{
+  "version": "1.0",
+  "date": "20 November 2026",
+  "status": "Leadership discussion draft · Proof of concept / pilot",
+  "papers": [
+    {
+      "slug": "executive-whitepaper",
+      "title": "A closer connection to the mosque",
+      "subtitle": "Masjidee and a connected approach to member learning, community life and responsible participation insights",
+      "label": "Executive whitepaper",
+      "audience": "For Jamaat central executives and national leadership",
+      "readingTime": "6-minute read",
+      "summary": "Masjidee is a working proof of concept and Android pilot that brings useful mosque information, structured religious learning and optional visit recording into one member-centered experience. The proposal is to evaluate it as a practical service to members first, then extend it under Jamaat-approved content, access and privacy arrangements.",
+      "sections": [
+        {
+          "heading": "The opportunity: earn a place in members’ everyday lives",
+          "paragraphs": [
+            "A stronger connection to the mosque begins with something members want to use. Prayer times, the next congregation, recent Friday sermons, Qibla direction and relevant community activities provide immediate reasons to open an app. Masjidee brings these services together rather than asking members to visit several disconnected sources.",
+            "Mosques can publish prayer and activity calendars through Google Calendar. Members select the mosque and calendar categories relevant to them, discover configured nearby mosques, and choose fixed-lead reminders to leave for congregation. The current reminder is a chosen number of minutes, not a live traffic or travel-time prediction."
+          ],
+          "bullets": [],
+          "callout": "The adoption proposition is service before reporting: give members something useful, then invite them to participate in learning and voluntary feedback."
+        },
+        {
+          "heading": "Turn access to information into a path of learning",
+          "paragraphs": [
+            "The connected learning system can be opened independently on the web or through Masjidee’s student view using the same signed-in account. Members can review concepts through flashcards, take self-assessments, return to unfinished work and see their own progress.",
+            "Jamaat-approved material could include Salat meanings, selected Surah translations, Friday sermon review and book-study questions. These are examples of content that can be authored and reviewed; the app does not automatically produce approved religious instruction.",
+            "Assignments combine several concepts; assignment sets organize several assignments. Authorized people can distribute sets to individuals or organizations. Parents can assign work to their own children, including supervised child learning profiles where a child has no email address. Personal progress, parental review and delegated organizational visibility create a practical support structure around learning."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Reflect the organization members already belong to",
+          "paragraphs": [
+            "The system supports configurable organization hierarchies and distinct member relationships. An illustrative structure is AMI / global Jamaat → USA → local chapter → membership group, with individual accounts attached to that structure. Tahir Academy levels and auxiliary affiliations can be represented alongside the main Jamaat relationship.",
+            "A stable application account connects learning, assignments and memberships. Google and email sign-in are used in the current pilot. Additional social providers such as Apple can be introduced when configured and validated; they are not claimed as active today. Explicitly linking eligible verified identities can keep multiple sign-ins attached to one account; existing duplicate accounts are not automatically merged.",
+            "Today’s member profile offers a primary Jamaat, an auxiliary and a religious-school membership. Broader arrangements, such as a dedicated Waqf-e-Nau membership category, are an extension opportunity rather than a claim that every program already has its own workflow."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Use attendance signals carefully and constructively",
+          "paragraphs": [
+            "Members can check in and out manually or explicitly enable background geofence detection. When the phone delivers an observation, the app can save it locally, show an optional local notification and upload later. A separate process pairs observations into possible visits and compares them with published congregation schedules and relevant subscribed activities.",
+            "This provides useful participation signals, not proof of prayer or activity attendance. Phone behavior, delayed uploads, missing events and shared devices can affect the result. A parent’s phone must not be treated as evidence that each child attended.",
+            "A local Secretary Tarbiyyat could use explicitly authorized reports to understand shared observations and plan supportive follow-up. A national Secretary Tarbiyyat’s USA-wide view is a potential next phase: cross-mosque aggregation, scope, sharing rules and report definitions must be agreed and implemented before claiming that dashboard exists."
+          ],
+          "bullets": [
+            "Automatic recording is optional, requires permission and can be paused.",
+            "Raw visit records expire after 30 days; derived summaries remain until deleted.",
+            "Sharing with authorized mosque reporters starts off. Application administrators have separate privileged troubleshooting access, which must be governed and disclosed.",
+            "Reports should help improve services and engagement, not label faith, infer absence from missing data or rank members."
+          ]
+        },
+        {
+          "heading": "A bounded pilot, not a national rollout commitment",
+          "paragraphs": [
+            "The app is a proof of concept and pilot. The Android experience and connected backend exist, but broad adoption, reliability across phones, governance and operational support still need evaluation. iPhone delivery, Bluetooth detection and traffic-aware reminders are future work.",
+            "Leadership can approve a small voluntary pilot with a named local sponsor, content reviewer, operational owner and data-access owner. Assess whether members find schedules and learning useful; whether approved content and assignments are manageable; and whether consent, correction and deletion controls are understandable. Compare observations with volunteer feedback rather than assuming complete attendance coverage.",
+            "The current pilot is free to members and its public website uses free GitHub Pages hosting. Production operation, support, always-on hosting and future platform distribution can require a budget. No monetary return or spiritual outcome is asserted without evidence."
+          ],
+          "bullets": [],
+          "callout": "Decision requested: endorse a limited, voluntary evaluation; appoint accountable owners; approve the content and privacy rules; and review evidence before authorizing expansion."
+        }
+      ]
+    },
+    {
+      "slug": "detailed-whitepaper",
+      "title": "Connecting mosque, learning and member identity",
+      "subtitle": "A detailed leadership framework for evaluating and extending Masjidee",
+      "label": "Detailed whitepaper",
+      "audience": "For Jamaat executives, Tarbiyyat leadership, education teams and pilot owners",
+      "readingTime": "15-minute read",
+      "summary": "This paper describes the value proposition, member journeys, organizational model, reporting boundaries and governance needed to evaluate Masjidee. It separates the implemented pilot from proposed extensions and provides a decision framework for a controlled, voluntary evaluation.",
+      "sections": [
+        {
+          "heading": "1. Purpose and leadership proposition",
+          "paragraphs": [
+            "Masjidee, meaning “My Mosque,” aims to make the mosque a more useful and accessible part of a member’s daily life. It brings mosque-published information, student learning and optional participation signals into one connected experience. The learning system also remains independently available on the web, so access is not limited to people installing the mobile app.",
+            "The leadership proposition is not simply another communication channel or an attendance counter. It is a common member relationship: the same person can consult a prayer schedule, learn a concept, complete an assigned learning sequence, associate with relevant organizations and review their own activity. Appropriate, explicitly granted reporting can then help families and responsible office-bearers offer support.",
+            "This is a working proof of concept and pilot, not a declaration of national production readiness. Functional implementation, operational reliability, approved educational content and organizational authorization are separate questions. A successful pilot must answer all four before wider adoption."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "2. Strengthen the everyday relationship with the mosque",
+          "paragraphs": [
+            "The app’s first obligation is to be useful to members. The selected mosque’s next congregation and published prayer times reduce the need to search multiple sources. Recent Friday sermons offer Urdu and English audio/video options when usable official links are available, with the official Alislam page as a fallback. Qibla direction and discovery of configured nearby mosques address common practical needs.",
+            "Google Calendar provides an initial publishing route familiar to many local teams. A mosque can publish separate prayer and activity calendars and classify them with categories such as Salat, Jamat, Amila, Khuddam, Atfal, Nasirat and Lajna. Members follow the categories relevant to them. A nearby-mosque result is limited to mosques configured in the system; it is not a complete global directory.",
+            "Members can opt into a fixed lead-time reminder before congregation. This helps them plan when to leave, but the current implementation does not calculate live traffic or a guaranteed journey time. Source accuracy and freshness are critical: no app should silently turn missing or stale source information into apparently authoritative prayer times.",
+            "For a visiting member, selecting a mosque changes the local schedule and experience without necessarily changing their formal Jamaat membership. This distinction supports travel while keeping organizational reporting relationships intentional."
+          ],
+          "bullets": [
+            "Local responsibility: maintain accurate source calendars and review imported prayer mappings.",
+            "Member control: select relevant categories, reminders and location permissions.",
+            "Leadership value: a dependable service increases the chance that members choose to engage voluntarily."
+          ]
+        },
+        {
+          "heading": "3. Support religious knowledge development",
+          "paragraphs": [
+            "The learning system organizes concepts into tag-based folders and presents individual questions or cards. Members can review flashcards, assess their understanding, revisit material and continue where they left off. Question-level audio can support pronunciation and listening where suitable recordings or links are provided.",
+            "Illustrative educational topics include Salat translation, selected Surah meanings, reviewed Friday sermon questions and book-study material. These examples require a curriculum owner and appropriate review. A concept’s presence in the system does not by itself establish religious approval, completeness or age suitability.",
+            "Self-assessment provides a private starting point for reflection. The member can see learning and assessment history; parents can review their own children’s progress; and authorized teachers or office-bearers can see permitted learners. Reporting is a tool for support and follow-up, not a substitute for teaching, discussion or spiritual development.",
+            "Members enter the learning interface through Masjidee’s student-only experience using an authenticated handoff, or use the web application independently. The student interface does not expose administrative powers merely because a person also holds an administrator role elsewhere."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "4. Move from individual concepts to structured assignments",
+          "paragraphs": [
+            "An assignment brings several concepts together under a short name and description. An assignment set brings several assignments together into a learning sequence. For example, a Salat learning set might include understanding the opening prayer, reviewing selected meanings and completing a short assessment. A book-study set could combine concepts for several chapters.",
+            "Private and public work are distinct. Publishing public assignment material and distributing work beyond one’s own family are controlled by specific permissions. Authorized distribution can target named individuals or an organization, using the recipient and organizational eligibility rules. A parent can assign suitable sets to their own children without obtaining an additional staff assignment role.",
+            "Members can resume larger assignment attempts and see progress. Oversight can include recipient, started and completed counts and authorized learner-level detail. Content editions and recorded attempts preserve the meaning of historical work when material is later revised.",
+            "Younger children can have supervised learning profiles without an email account. A parent selects the child’s learning workspace on a shared device, supervises learning and returns to the parent workspace afterward. The child’s learning identity is distinct from the parent’s phone-owner identity used for location observations."
+          ],
+          "bullets": [],
+          "callout": "An illustrative learning sequence is content, not a claim that a particular Salat, sermon or book curriculum is already approved and published."
+        },
+        {
+          "heading": "5. Model Jamaat and auxiliary structures explicitly",
+          "paragraphs": [
+            "The organization model is hierarchical and configurable. An illustrative Jamaat path is global AMI / Jamaat → national Jamaat (USA) → local chapter (Oshkosh) → membership group → associated individuals. Individuals are application accounts linked to organization nodes, not merely another organizational label.",
+            "Educational groups can include Tahir Academy and its levels. Auxiliary hierarchies can reflect Ansar, Khuddam, Atfal, Lajna and Nasirat structures, with explicit relationships rather than relying on a member’s display name. Organization classifications are maintained through formal tags, allowing the system to recognize what a node represents.",
+            "The current self-service membership pattern supports a primary Jamaat, one auxiliary and one religious-school membership. It therefore supports multiple types of belonging but is not an unrestricted “join every program” workflow. Waqf-e-Nau and other programs can be represented in organizational data; dedicated membership and reporting flows may require additional categories and design.",
+            "Names can repeat in different branches. Hierarchical paths and stable identifiers distinguish them. Shared or inherited addresses can support related organizations at one physical location. Neither a shared address nor a shared word in an organization name grants report access automatically."
+          ],
+          "bullets": [],
+          "table": {
+            "headers": [
+              "Illustrative relationship",
+              "Member experience",
+              "Leadership implication"
+            ],
+            "rows": [
+              [
+                "Primary Jamaat / local chapter",
+                "Member belongs to a defined local membership group",
+                "Makes local and delegated subtree responsibility meaningful"
+              ],
+              [
+                "Auxiliary affiliation",
+                "A separate, explicit affiliation such as Ansar or Khuddam",
+                "Keeps auxiliary identity distinct from Jamaat identity"
+              ],
+              [
+                "Tahir Academy / level",
+                "A child can be associated with an educational level",
+                "Supports appropriately scoped teaching and assignments"
+              ],
+              [
+                "Other programs, including Waqf-e-Nau",
+                "Potential additional organizational relationships",
+                "Requires a defined membership model, access policy and workflow where not already supported"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Keep member identity central",
+          "paragraphs": [
+            "A durable application user record links memberships, learning history and assignments. The sign-in identity is a way to authenticate that person, not the definition of their whole organizational relationship. Google and email sign-in are in the current pilot. Apple and other providers are potential additions when configured and tested; iPhone availability is a separate platform-delivery question.",
+            "The web profile supports explicitly linking eligible verified identities to the same application user and displaying a preferred primary identity separately from the identity used in the current session. Signing in with another email does not automatically merge two existing accounts. Resolving duplicate accounts remains a separate data and authorization problem.",
+            "This distinction matters for continuity: a member should not lose learning history because an eligible new sign-in is explicitly linked to the same account. It also matters for safety: a matching email, name or organization must not silently transfer another person’s roles or family relationships.",
+            "Leadership should establish an accountable identity-support process, including how membership errors, changed contact details and duplicate accounts are reviewed. The platform provides structures for these cases but does not replace organizational decisions about who should have access."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "7. Understand attendance as observations and interpretation",
+          "paragraphs": [
+            "Manual check-in/out and optional geofence observations create raw events. Background detection requires the member’s explicit authorization and the phone’s permissions. When the operating system delivers an event, the app saves it locally, may show a local notification and attempts upload. Offline events can be queued, preserving their recorded times.",
+            "A lean upload endpoint receives observations without deciding the purpose of a visit. A separate server-side process pairs compatible observations into possible visits and compares them with published congregation schedules. Subscribed non-prayer calendar events can produce possible activity matches when their time and site overlap the visit.",
+            "The reporting process is scheduled approximately every 15 minutes when enabled; scheduling and processing can be delayed. Repeated observations, corrections, unmatched entries/exits and conflicting evidence must remain interpretable rather than being treated as definitive attendance. Device timezone was not recorded in historical uploads; administrator diagnostics distinguish UTC, the viewer’s timezone and recorded mosque-local time.",
+            "Geofencing is not guaranteed to detect every crossing promptly. Device power controls, force-stop, permissions, signal conditions and network/service availability affect behavior. A shared device observes its signed-in phone owner; it does not establish that every associated family member attended."
+          ],
+          "bullets": [],
+          "callout": "A recorded visit plus a calendar match is a useful participation signal. It is not proof of prayer, a measure of faith, or evidence of absence when no event appears."
+        },
+        {
+          "heading": "8. Define oversight before extending it",
+          "paragraphs": [
+            "Members can review their own history. A mosque reporting grant and a member’s explicit sharing choice determine ordinary mosque-report visibility; a mosque settings role alone does not grant that access. Application administrators have separate privileged troubleshooting access to retained raw and derived records, including records not shared with ordinary mosque reporters. This distinction must be disclosed and operationally governed.",
+            "A local Secretary Tarbiyyat could be explicitly authorized to review relevant shared observations for the mosque, alongside organizational learning reports where delegated. The useful question is how services and support can improve, not how to create a complete attendance register from incomplete phone evidence.",
+            "Learning oversight can follow a delegated organizational subtree, so an authorized national education supervisor may review the relevant learners and assignment results. This existing learning scope should not be confused with a cross-mosque attendance dashboard.",
+            "A national Secretary Tarbiyyat may wish to see a USA-wide picture. The hierarchy provides a foundation, but an automatically available national attendance dashboard is not claimed in the pilot. Cross-mosque aggregation, grants, minimum group sizes, coverage definitions and member-sharing rules need explicit design and implementation.",
+            "Organization membership and report responsibility are different. A person belonging to USA does not thereby acquire access to USA members. Appointing an office-bearer also needs a defined scope, an access grant, review and removal when responsibility ends."
+          ],
+          "bullets": [],
+          "table": {
+            "headers": [
+              "Audience",
+              "Appropriate current use",
+              "Boundary"
+            ],
+            "rows": [
+              [
+                "Member",
+                "Own learning, assignments and interpreted visits",
+                "Cannot infer another person’s history from shared membership"
+              ],
+              [
+                "Parent",
+                "Own children’s learning, assignments and authorized review",
+                "Parent phone location is not attendance evidence for children"
+              ],
+              [
+                "Teacher / authorized learning supervisor",
+                "Permitted learners and organizational subtree reports",
+                "Visibility follows explicit responsibility; teaching does not automatically grant content creation"
+              ],
+              [
+                "Mosque attendance reporter",
+                "Relevant sharing users within the granted mosque scope",
+                "Not a complete roster; configuration rights alone are insufficient"
+              ],
+              [
+                "Application administrator",
+                "Audited raw-event and interpreted-visit troubleshooting",
+                "Privileged access needs restricted assignment and oversight"
+              ],
+              [
+                "National leadership",
+                "Potential aggregate learning/participation planning",
+                "National attendance roll-up is a proposed extension, not an existing blanket entitlement"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "9. Establish content, privacy and operational ownership",
+          "paragraphs": [
+            "The pilot needs an educational content owner to set topic priorities, review translations and question quality, and distinguish explanatory teaching material from official religious publications. Friday sermon links point to official Alislam sources; reviewed sermon-learning concepts are separate educational content and must not be presented as official transcripts by default.",
+            "A privacy and access owner should define why information is collected, who can see it, how to request help, how long records remain and how to respond to misuse or mistakes. Recording, sharing, access and retention are separate decisions. In the current system, raw visit data expires after 30 days; derived summaries remain until deleted. Live history deletion and backup retention are distinct.",
+            "Background recording should be optional, understandable and reversible. Members who decline it should still receive the core schedule and learning value. The pilot should not make religious standing or access to community services depend on geofence participation.",
+            "An operational owner must maintain calendars, deployment, backups, restore readiness and support. Free-tier web hosting can sleep and cause slow startup or timeouts; local event queues and scheduled notifications help but do not eliminate service availability needs. The static website is free to host, while reliable application operation and future platform distribution may require funding."
+          ],
+          "bullets": [
+            "Appoint named owners for local calendars, reviewed content, technical operation and privileged access.",
+            "Review roles regularly and remove access when responsibility ends.",
+            "Use synthetic or consented examples in demonstrations; avoid exposing identifiable member or child records.",
+            "Before broader deployment, complete appropriate privacy, safeguarding and organizational review rather than treating a software pilot as formal approval."
+          ]
+        },
+        {
+          "heading": "10. What the pilot establishes—and what it does not",
+          "paragraphs": [],
+          "bullets": [],
+          "table": {
+            "headers": [
+              "Area",
+              "Implemented pilot foundation",
+              "Extension / validation still needed"
+            ],
+            "rows": [
+              [
+                "Platforms",
+                "Android pilot and independent web learning",
+                "Signed iPhone pilot and real-device iOS background validation"
+              ],
+              [
+                "Daily mosque services",
+                "Published schedules, category-based activities, Qibla, sermon links, fixed-lead reminders",
+                "Local calendar quality, user usability and reminder reliability across phones"
+              ],
+              [
+                "Learning",
+                "Concepts, flashcards, assessments, resumable work and authorized progress reports",
+                "Jamaat-approved curricula and evidence that the experience helps members"
+              ],
+              [
+                "Assignments",
+                "Multi-concept assignments, assignment sets, controlled distribution and oversight",
+                "Program-specific rollout, content stewardship and support capacity"
+              ],
+              [
+                "Identity and organizations",
+                "Stable users, eligible linked identities, hierarchy and typed memberships",
+                "Additional provider activation, duplicate-account resolution and new program membership flows"
+              ],
+              [
+                "Participation signals",
+                "Manual and optional geofence observations, interpreted visits and scoped reports",
+                "Real-world detection coverage, interpretation quality and approved national aggregation"
+              ],
+              [
+                "Future location capabilities",
+                "An extensible model for mosque location settings",
+                "Active Bluetooth detection and traffic-aware travel estimates are not delivered pilot capabilities"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "11. Proposed voluntary pilot and evaluation",
+          "paragraphs": [
+            "A practical next step is a small, time-bounded evaluation at one or a few willing mosques. A six-to-eight-week period is a suggested planning frame, not a promise that every deployment or approval can be completed in that time. Begin with a group able to provide feedback, including parents and a small number of learning supervisors.",
+            "Start with calendar accuracy and everyday usefulness. Add a modest reviewed learning set and let families try self-study and assignments. Introduce optional attendance observations only after consent, support and report access are understood. Ask volunteers to compare selected observed visits with their own recollection to identify delays and mismatches.",
+            "Evaluation should distinguish adoption, usability and technical reliability from religious outcomes. More screen use, more recorded events or higher assessment completion does not establish spiritual improvement. Missing observations must not be counted as absence; compare participation metrics only within the stated consent and device coverage.",
+            "Set success and stop/adjust criteria before collection. Examples include acceptable schedule correctness, understandable permission choices, manageable support effort and an absence of unresolved serious access problems. The exact thresholds should be approved by the pilot owners rather than invented as proven results."
+          ],
+          "bullets": [],
+          "table": {
+            "headers": [
+              "Phase",
+              "Focus",
+              "Evidence to review"
+            ],
+            "rows": [
+              [
+                "Prepare",
+                "Appoint owners, approve content and privacy rules, verify calendars",
+                "Readiness checklist and agreed scope"
+              ],
+              [
+                "Serve",
+                "Offer schedules, activities, sermons and practical help",
+                "Volunteer feedback, source corrections and support issues"
+              ],
+              [
+                "Learn",
+                "Try a small learning sequence, self-assessment and family assignments",
+                "Completion and usability with appropriate context, not rankings"
+              ],
+              [
+                "Observe, if volunteered",
+                "Test manual/geofence observations and scoped reports",
+                "Delays, missing events, correction behavior and sharing comprehension"
+              ],
+              [
+                "Review",
+                "Decide to improve, extend or stop the pilot",
+                "A documented decision with named responsibilities and remaining gaps"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "12. The decision requested",
+          "paragraphs": [
+            "Approve a bounded, voluntary evaluation rather than an immediate national rollout. Nominate a sponsoring executive and accountable owners for content, local mosque operations, technical support and data access. Agree what information leadership genuinely needs and what should remain outside the pilot.",
+            "If the pilot demonstrates value, prioritize extensions through documented enhancement requests, reviewed changes and further user testing. Candidate extensions include a national aggregate reporting design, additional organization programs, iPhone delivery and improved mosque-specific services. Each should have a defined use case, owner, access rule and acceptance criteria.",
+            "The objective is a useful, trusted connection between member, family and mosque: practical services that encourage adoption; learning that can develop over time; and careful, explainable insights that help responsible leaders support their communities."
+          ],
+          "bullets": [],
+          "callout": "Leadership endorsement is sought for evaluation, stewardship and feedback. Organizational approval, production readiness and measured impact should be established through that evaluation, not assumed by this paper."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "title": "Your mosque.\nA little closer.",
+      "kicker": "MASJIDEE · LEADERSHIP BRIEFING",
+      "points": [
+        "Practical services for members",
+        "A connected path of learning",
+        "Responsible participation insights"
+      ],
+      "notes": "Open with the member experience. This is a working proof of concept and Android pilot for leadership evaluation, not a claim of official national approval or production readiness.",
+      "kind": "cover"
+    },
+    {
+      "title": "Start with value\nto the member",
+      "kicker": "THE PROPOSITION",
+      "points": [
+        "Make mosque information easy to find",
+        "Connect learning to everyday life",
+        "Let members choose optional participation features"
+      ],
+      "notes": "The app should earn adoption by being useful. Reporting is a supporting benefit, not the primary reason a member must install it.",
+      "kind": "three"
+    },
+    {
+      "title": "Useful, every day",
+      "kicker": "MOSQUE CONNECTION",
+      "points": [
+        "Next congregation and published prayer times",
+        "Mosque activity calendars and selected categories",
+        "Recent Friday sermons and Qibla direction",
+        "Configured nearby mosques and fixed-lead reminders"
+      ],
+      "notes": "Google Calendar is the initial source. Nearby results cover configured mosques only. The reminder uses chosen minutes before congregation; it is not a traffic-aware travel calculation."
+    },
+    {
+      "title": "A path from review\nto understanding",
+      "kicker": "RELIGIOUS LEARNING",
+      "points": [
+        "Review approved concepts with flashcards",
+        "Take self-assessments and revisit material",
+        "Resume progress on the app or independent web interface"
+      ],
+      "notes": "Examples of content that can be authored: Salat meanings, selected Surah translations, sermon review and book-study concepts. These require content ownership and review; the app does not automatically approve religious instruction.",
+      "kind": "flow",
+      "flow": [
+        "Concept",
+        "Flashcards",
+        "Assessment",
+        "Progress"
+      ]
+    },
+    {
+      "title": "Learning becomes\na supported journey",
+      "kicker": "FAMILIES & SUPERVISORS",
+      "points": [
+        "Members review their own learning history",
+        "Parents support their own children",
+        "Delegated supervisors see permitted learners"
+      ],
+      "notes": "Supervised child profiles can be used without a child email account. Their learning identity is distinct from the parent phone owner. Teacher visibility does not imply content-creation or mosque-reporting powers.",
+      "kind": "three"
+    },
+    {
+      "title": "Organize a program,\nnot just a lesson",
+      "kicker": "ASSIGNMENTS",
+      "points": [
+        "Several concepts form an assignment",
+        "Several assignments form an assignment set",
+        "Authorized users distribute to individuals or organizations",
+        "Parents can assign sets to their own children"
+      ],
+      "notes": "An illustrative Salat learning program can combine meanings and assessments. Public creation and distribution are permission-controlled. Learners resume work and supervisors review permitted progress.",
+      "kind": "flow",
+      "flow": [
+        "Concepts",
+        "Assignment",
+        "Assignment set",
+        "Recipients"
+      ]
+    },
+    {
+      "title": "Reflect real\norganizational relationships",
+      "kicker": "ORGANIZATION STRUCTURE",
+      "points": [
+        "Configurable global → national → chapter hierarchy",
+        "Primary Jamaat, auxiliary and religious-school relationships",
+        "Tahir Academy levels and extensible program structures"
+      ],
+      "notes": "The illustrative path is AMI/global Jamaat, USA, a local chapter, a membership group, then associated individuals. Current self-service membership supports primary Jamaat, one auxiliary and one school; Waqf-e-Nau-specific membership flows are an extension opportunity.",
+      "kind": "hierarchy"
+    },
+    {
+      "title": "One member.\nA continuing relationship.",
+      "kicker": "CENTRAL IDENTITY",
+      "points": [
+        "Learning, assignments and memberships belong to a stable account",
+        "Google/email sign-in in the current pilot",
+        "Eligible verified identities can be explicitly linked"
+      ],
+      "notes": "Apple and other social providers are future/configured additions, not claimed live today. Existing duplicate accounts are not automatically merged. Additional identities do not automatically confer roles or family access.",
+      "kind": "three"
+    },
+    {
+      "title": "A visit is an observation.\nA match is an inference.",
+      "kicker": "PARTICIPATION SIGNALS",
+      "points": [
+        "Manual In / Out or optional authorized geofencing",
+        "Local capture and queued upload when needed",
+        "Separate processing compares visits with calendar events"
+      ],
+      "notes": "Geofencing can be delayed or missed. Matching a congregation or subscribed activity is not proof of participation. A parent phone cannot establish attendance for every child.",
+      "kind": "flow",
+      "flow": [
+        "Observe",
+        "Upload",
+        "Interpret",
+        "Review"
+      ]
+    },
+    {
+      "title": "Oversight follows\nresponsibility—not curiosity",
+      "kicker": "PERMISSIONS",
+      "points": [
+        "Personal and parental learning review",
+        "Explicitly granted local reporting scopes",
+        "Separate, audited administrator troubleshooting"
+      ],
+      "notes": "Ordinary mosque attendance reporting requires a scope grant and the member’s sharing choice. Application administrators have distinct privileged diagnostic access, including unshared retained records. Configuration roles alone do not grant attendance reports.",
+      "kind": "three"
+    },
+    {
+      "title": "Local insight today.\nNational design deliberately.",
+      "kicker": "TARBIYYAT LEADERSHIP",
+      "points": [
+        "Local: review relevant shared observations with explicit permission",
+        "National: define cross-mosque aggregation and authorized scope",
+        "Never treat missing phone data as absence"
+      ],
+      "notes": "A local Secretary Tarbiyyat could be granted relevant mosque reporting access. An automatic USA-wide national attendance dashboard is not claimed in the pilot. Define denominators, sharing, minimum groups and governance before building it."
+    },
+    {
+      "title": "Trust is part\nof the product",
+      "kicker": "PILOT GOVERNANCE",
+      "points": [
+        "Optional recording, pause and deletion controls",
+        "Raw events: 30 days; summaries: until deleted",
+        "Reviewed content, named owners and restricted access"
+      ],
+      "notes": "Sharing with ordinary mosque reporters starts off. Disclose privileged application-administrator access. Parent/child safeguarding, support, backup retention and appropriate privacy review belong in the pilot plan. Do not use the pilot to label faith or rank members.",
+      "kind": "three"
+    },
+    {
+      "title": "Working pilot.\nClear boundaries.",
+      "kicker": "DELIVERY STATUS",
+      "points": [
+        "Android pilot and independent web learning exist",
+        "Real-device reliability and operational support need evaluation",
+        "iPhone, Bluetooth detection and traffic-aware reminders remain future work"
+      ],
+      "notes": "Functional software is not the same as organizational approval or national readiness. Free to members and a free static website do not imply zero production operating or platform-distribution costs."
+    },
+    {
+      "title": "Evaluate before\nyou expand",
+      "kicker": "A BOUNDED VOLUNTARY PILOT",
+      "points": [
+        "Prepare owners, calendars, content and privacy rules",
+        "Try everyday services and a small learning sequence",
+        "Test optional observations with willing participants",
+        "Review usefulness, reliability and support effort"
+      ],
+      "notes": "A six-to-eight-week frame is a suggested planning aid. Set thresholds before collection. Learning completion and app usage are engagement indicators, not proof of spiritual impact. Be ready to adjust, defer or stop.",
+      "kind": "flow",
+      "flow": [
+        "Prepare",
+        "Serve & learn",
+        "Observe voluntarily",
+        "Review"
+      ]
+    },
+    {
+      "title": "What leadership\nis being asked to do",
+      "kicker": "THE DECISION",
+      "points": [
+        "Endorse a limited voluntary evaluation",
+        "Nominate content, operational and data-access owners",
+        "Agree the evidence needed before wider rollout"
+      ],
+      "notes": "Seek a concrete decision about a bounded pilot, stewardship and feedback. Do not imply an approval already exists. The same connected foundation can be extended through reviewed enhancement requests.",
+      "kind": "three"
+    },
+    {
+      "title": "A useful connection.\nA trusted foundation.",
+      "kicker": "MASJIDEE",
+      "points": [
+        "Member → family → mosque → responsible leadership",
+        "Build on evidence. Extend with purpose."
+      ],
+      "notes": "Invite questions about member value, organizational scope, educational review, consent and pilot ownership. This deck describes the current pilot and proposed next steps; no attendance or adoption statistics are asserted.",
+      "kind": "closing"
+    }
+  ]
+}

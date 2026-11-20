@@ -1,0 +1,23 @@
+{
+  "sourceSha256": "9209258ffbfed078979e34cad724c5860e15242342bf56085866020e1b02e6f2",
+  "generatorSha256": "9d466f7d7fff24adb87a15aa586eaebcff91b31656a0eeb79d835edca8180ced",
+  "slides": 16,
+  "files": {
+    "masjidee-detailed-whitepaper.pdf": {
+      "sha256": "08372f02b22c0f282b61fb00a0890e33d6a911c7026253a157c005ae6a8480e8",
+      "bytes": 87856
+    },
+    "masjidee-executive-whitepaper.pdf": {
+      "sha256": "d5b633f21f4bafc892868f485582c1e3b03a033fc554cdaad1d34ec1b4b07215",
+      "bytes": 72018
+    },
+    "masjidee-leadership-presentation.pdf": {
+      "sha256": "7ead98418ef465cb530e5153e225126541f68e39fc1aca8a8a27f58874a2809b",
+      "bytes": 87038
+    },
+    "masjidee-leadership-presentation.pptx": {
+      "sha256": "1786f5d40ee12e2ba623d1dab6a860e577e71c6343ec2cfdce030249f1b10317",
+      "bytes": 78467
+    }
+  }
+}

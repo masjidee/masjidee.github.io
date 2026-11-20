@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+
+# Leadership attachments are shared by direct link, not promoted for crawling.
+Disallow: /docs/leadership/*.pdf
+Disallow: /docs/leadership/*.pptx

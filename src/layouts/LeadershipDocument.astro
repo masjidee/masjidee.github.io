@@ -1,0 +1,5 @@
+---
+import '../styles/leadership.css';
+const {title,description,presentation=false}=Astro.props;
+---
+<!doctype html><html lang="en" data-leadership-document><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content={description}/><meta name="robots" content="noindex, nofollow, noarchive"/><meta name="theme-color" content="#104f46"/><link rel="icon" href="/masjidee-mark.svg"/><title>{title} — Masjidee leadership</title></head><body data-pagefind-ignore="all" class:list={{presentation}}><a class="skip" href="#document">Skip to document</a><header class="document-header"><div class="document-brand"><img src="/masjidee-mark.svg" width="35" height="35" alt=""/><strong>Masjidee</strong><span>LEADERSHIP SERIES</span></div><div class="document-status">Proof of concept / pilot<br/><small>Discussion draft · 20 November 2026</small></div></header><main id="document"><slot/></main><footer class="document-footer"><span>MASJIDEE · LEADERSHIP DISCUSSION DRAFT</span><p>Prepared for evaluation and discussion. This document does not imply official Jamaat endorsement or production readiness.</p></footer></body></html>

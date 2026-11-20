@@ -1,11 +1,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://masjidee.github.io',
   base: '/',
   trailingSlash: 'always',
-  integrations: [starlight({
+  integrations: [sitemap({ filter: (page) => !new URL(page).pathname.startsWith('/docs/leadership/') }), starlight({
     title: 'Masjidee guides',
+    pagefind: { index: { excludeSelectors: ['html[data-leadership-document]'] } },
     description: 'Help with prayer times, mosque activities, learning and privacy in the Masjidee pilot.',
     logo: { src: './public/masjidee-mark.svg', replacesTitle: false },
     favicon: '/masjidee-mark.svg',
