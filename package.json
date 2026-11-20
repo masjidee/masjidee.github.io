@@ -10,10 +10,12 @@
     "dev": "astro dev --host 0.0.0.0 --port 4321",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0 --port 4321",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "check:leadership": "node scripts/check-leadership.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "7.3.0",
+    "@astrojs/sitemap": "3.7.6",
     "@astrojs/starlight": "0.43.1",
     "astro": "7.4.13"
   }

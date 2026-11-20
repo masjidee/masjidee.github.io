@@ -1,0 +1,10 @@
+---
+import LeadershipDocument from '../../../layouts/LeadershipDocument.astro';
+import content from '../../../data/leadership.json';
+export function getStaticPaths(){return content.papers.map(paper=>({params:{document:paper.slug},props:{paper}}));}
+const {paper}=Astro.props;
+---
+<LeadershipDocument title={paper.title} description={paper.subtitle}>
+ <div class="paper-hero"><p class="document-eyebrow">{paper.label}</p><h1>{paper.title}</h1><p class="document-subtitle">{paper.subtitle}</p><p class="document-audience">{paper.audience} · {paper.readingTime}</p><div class="document-actions"><a class="document-button" href={`/docs/leadership/masjidee-${paper.slug}.pdf`} download>Download PDF ↓</a><button onclick="window.print()" class="print-button">Print this paper</button></div></div>
+ <article class="paper"><div class="document-summary"><strong>Executive perspective</strong><p>{paper.summary}</p></div>{paper.sections.map(section=><section><h2>{section.heading}</h2>{section.paragraphs.map(paragraph=><p>{paragraph}</p>)}{section.bullets.length>0&&<ul>{section.bullets.map(bullet=><li>{bullet}</li>)}</ul>}{'table' in section&&section.table&&<div class="document-table"><table><thead><tr>{section.table.headers.map(header=><th scope="col">{header}</th>)}</tr></thead><tbody>{section.table.rows.map(row=><tr>{row.map(cell=><td>{cell}</td>)}</tr>)}</tbody></table></div>}{'callout' in section&&section.callout&&<aside class="document-callout">{section.callout}</aside>}</section>)}</article>
+</LeadershipDocument>
