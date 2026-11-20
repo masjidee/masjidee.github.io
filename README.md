@@ -1,5 +1,7 @@
 # Masjidee website and user guides
 
+Repository: `masjidee/masjidee.github.io`. Public address: **https://masjidee.github.io/**.
+
 Public website and documentation for the Masjidee Android pilot. The application and shared backend remain in a separate private repository. No application credentials, user records or private source belong here.
 
 ## What is included
@@ -20,7 +22,7 @@ npm ci
 npm run dev
 ```
 
-The development site uses port 4321 and project base `/masjidee-site/`. In the shared environment, the application checkout is `/workspace/SmartLearningBuddy`; this site is `/workspace/masjidee-site`. Run commands in the intended repository.
+The development site uses port 4321 and project base `/`. In the shared environment, the application checkout is `/workspace/SmartLearningBuddy`; this site is `/workspace/masjidee-site`. Run commands in the intended repository.
 
 ```sh
 npm run build
@@ -44,7 +46,7 @@ Publication is deliberately manual for this first review.
 2. In this repository, open **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 3. Open **Actions → Publish website → Run workflow**, selecting `main`.
 4. Wait for the build and deployment jobs to succeed. Approve the `github-pages` deployment if GitHub requests it.
-5. Open `https://saada1999.github.io/masjidee-site/`. Guides are under `/masjidee-site/docs/`.
+5. Open `https://masjidee.github.io/`. Guides are under `/docs/`.
 
 The separate **Website checks** workflow builds and checks links on pull requests and main pushes; it does not publish. Do not run the deployment workflow from an unreviewed branch. No personal access token, hosting secret or domain purchase is needed for GitHub Pages. GitHub service limits and terms still apply.
 

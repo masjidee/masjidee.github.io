@@ -1,8 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 export default defineConfig({
-  site: 'https://saada1999.github.io',
-  base: '/masjidee-site',
+  site: 'https://masjidee.github.io',
+  base: '/',
   trailingSlash: 'always',
   integrations: [starlight({
     title: 'Masjidee guides',
@@ -10,7 +10,7 @@ export default defineConfig({
     logo: { src: './public/masjidee-mark.svg', replacesTitle: false },
     favicon: '/masjidee-mark.svg',
     customCss: ['./src/styles/docs.css'],
-    social: [{ icon: 'github', label: 'Website source', href: 'https://github.com/saada1999/masjidee-site' }],
+    social: [{ icon: 'github', label: 'Website source', href: 'https://github.com/masjidee/masjidee.github.io' }],
     sidebar: [
       { label: 'Welcome', link: '/docs/' },
       { label: 'Start here', items: [
